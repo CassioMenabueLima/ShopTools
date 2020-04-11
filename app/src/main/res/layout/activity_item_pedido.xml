@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pedido.item_pedidoActivity">
+
+    <TextView
+        android:id="@+id/it_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Produto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/it_qtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Quantidade"
+        app:layout_constraintBottom_toBottomOf="@+id/it_produto"
+        app:layout_constraintStart_toEndOf="@+id/it_produto"
+        app:layout_constraintTop_toTopOf="@+id/it_produto" />
+
+    <TextView
+        android:id="@+id/it_vunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Valor Unitário"
+        app:layout_constraintBottom_toBottomOf="@+id/it_qtd"
+        app:layout_constraintStart_toEndOf="@+id/it_qtd"
+        app:layout_constraintTop_toTopOf="@+id/it_qtd" />
+
+    <TextView
+        android:id="@+id/it_v_tot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Valor Total"
+        app:layout_constraintBottom_toBottomOf="@+id/it_vunit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/it_vunit"
+        app:layout_constraintTop_toTopOf="@+id/it_vunit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
